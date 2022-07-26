@@ -43,4 +43,63 @@ a {
 
 body {
     font-family: $primary;
+    padding: 22px 32px;
+}
+
+.header {
+    &__container {
+        margin-bottom: 51.5px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+    }
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        width: 564.59px;
+        a {
+            text-transform: uppercase;
+            padding: 0 16px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.2px;
+            letter-spacing: 1.58px;
+            color: #56593D;
+
+        }
+    }
+
+    &__logo {
+        margin-left: 50px;
+    }
+
+    &__user-abilities {
+        display: flex;
+        img {
+            padding: 0 12px;
+
+        }
+    }
+}
+
+.main {
+    &__img-wrapper {
+        background-image: url(./images/Rectangle.png);
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    &__img-info {
+        position: absolute;
+        bottom: 64px;
+        right: 64px;
+    }
+
+
 }
