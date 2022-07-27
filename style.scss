@@ -259,20 +259,16 @@ body {
     }
 
     &__design-story-container {
-        @extend %flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 119px;
-        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 110px;
     }
 
-    &__design-img-wrapper {
-        max-width: 743px;
+    &__design-img {
         width: 100%;
-        position: relative;
+        height: auto;
     }
 
-    
     &__design-title {
         @extend %style;
         margin-bottom: 66px;
@@ -280,10 +276,8 @@ body {
         line-height: 38.88px;
         text-align: center;
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
+    
 
     &__design-title::after {
         content: "";
@@ -291,6 +285,10 @@ body {
         height: 1px;
         width: 40px;
         background: #56593D;
+        position: absolute;
+        bottom: -32px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__design-desc {
@@ -298,6 +296,146 @@ body {
         font-size: 20px;
         line-height: 32.4px;
         text-align: center;
+        font-family: $secondary;
         width: 347px;
+        margin: 0 auto;
     }
+
+    &__table-time {
+        padding: 65px 32px;
+        background: #FFFFEF;
+    }
+
+    &__table-time-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 120px;
+    }
+
+    &__table-title {
+        @extend %style;
+        margin-bottom: 66px;
+        position: relative;
+        font-size: 29px;
+        line-height: 38.88px;
+        text-align: center;
+    }
+
+    &__table-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        width: 40px;
+        background: #56593D;
+        position: absolute;
+        bottom: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__table-desc {
+        @extend %style;
+        font-size: 20px;
+        text-align: center;
+        line-height: 32.4px;
+        width: 347px;
+        font-family: $secondary;
+        margin: 0 auto;
+    }
+
+    &__table-img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__register {
+        margin-top: 40px;
+    }
+
+    &__register-container {
+        padding: 63px;
+        background: #FFFFEF;
+    }
+
+    &__register-signup {
+        text-align: center;
+    }
+
+    &__register-signup-title {
+        @extend %style;
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 38.88px;
+    }
+
+    &__register-signup-text {
+        @extend %style;
+        font-size: 17px;
+        line-height: 28.8px;
+        margin-bottom: 48px;
+    }
+
+    &__subscribe {
+        @extend %flex;
+        gap: 16.41px;
+    }
+
+    &__subscribe-form {
+
+        & form {
+            & input {
+                background: transparent;
+                outline: none;
+                color: #56593D;
+                font-weight: 400;
+                font-family: $primary;
+                border: none;
+                border-bottom: 1px solid #56593D;
+            }
+        }
+    }
+
+    &__subscribe-link {
+        padding: 1px 25px;
+        background: #56593D;
+        font-size: 15px;
+        line-height: 22.72px;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #FFFFEF;
+        text-transform: uppercase;
+    }
+
+    &__moments {
+        margin-top: 40px;
+    }
+
+    &__moments-container {
+        padding: 64px 32px;
+        background: #FFFFEF;
+    }
+
+
+    &__moments-title {
+        @extend %style;
+        @extend %flex;
+        font-size: 25px;
+        line-height: 32.4px;
+    }
+        
+    &__moments-img-wrapper {
+        @extend %flex;
+        margin-top: 39px;
+        flex: 1 1 auto;
+        gap: 8px;
+    }
+
+    &__moments-img {
+        width: 320px;
+        height: auto;
+    }
+
+    
 }
+
+

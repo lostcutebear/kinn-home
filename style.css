@@ -1,10 +1,10 @@
-.main__design-story-container, .main__boards-wrapper, .main__link-container {
+.main__moments-img-wrapper, .main__moments-title, .main__subscribe, .main__boards-wrapper, .main__link-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main__design-desc, .main__design-title, .main__essentials-img-wrapper p, .main__essentials-img-wrapper h2, .main__boards-price, .main__boards-type, .main__link {
+.main__moments-title, .main__register-signup-text, .main__register-signup-title, .main__table-desc, .main__table-title, .main__design-desc, .main__design-title, .main__essentials-img-wrapper p, .main__essentials-img-wrapper h2, .main__boards-price, .main__boards-type, .main__link {
   font-size: 16px;
   font-weight: 400;
   color: #56593D;
@@ -213,15 +213,14 @@ body {
   padding: 65px 32px;
 }
 .main__design-story-container {
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 119px;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 110px;
+       column-gap: 110px;
 }
-.main__design-img-wrapper {
-  max-width: 743px;
+.main__design-img {
   width: 100%;
-  position: relative;
+  height: auto;
 }
 .main__design-title {
   margin-bottom: 66px;
@@ -229,9 +228,6 @@ body {
   line-height: 38.88px;
   text-align: center;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .main__design-title::after {
   content: "";
@@ -239,10 +235,118 @@ body {
   height: 1px;
   width: 40px;
   background: #56593D;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main__design-desc {
   font-size: 20px;
   line-height: 32.4px;
   text-align: center;
+  font-family: "Jost", sans-serif;
   width: 347px;
+  margin: 0 auto;
+}
+.main__table-time {
+  padding: 65px 32px;
+  background: #FFFFEF;
+}
+.main__table-time-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+}
+.main__table-title {
+  margin-bottom: 66px;
+  position: relative;
+  font-size: 29px;
+  line-height: 38.88px;
+  text-align: center;
+}
+.main__table-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  width: 40px;
+  background: #56593D;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main__table-desc {
+  font-size: 20px;
+  text-align: center;
+  line-height: 32.4px;
+  width: 347px;
+  font-family: "Jost", sans-serif;
+  margin: 0 auto;
+}
+.main__table-img {
+  width: 100%;
+  height: auto;
+}
+.main__register {
+  margin-top: 40px;
+}
+.main__register-container {
+  padding: 63px;
+  background: #FFFFEF;
+}
+.main__register-signup {
+  text-align: center;
+}
+.main__register-signup-title {
+  margin-bottom: 16px;
+  font-size: 28px;
+  line-height: 38.88px;
+}
+.main__register-signup-text {
+  font-size: 17px;
+  line-height: 28.8px;
+  margin-bottom: 48px;
+}
+.main__subscribe {
+  gap: 16.41px;
+}
+.main__subscribe-form form input {
+  background: transparent;
+  outline: none;
+  color: #56593D;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-bottom: 1px solid #56593D;
+}
+.main__subscribe-link {
+  padding: 1px 25px;
+  background: #56593D;
+  font-size: 15px;
+  line-height: 22.72px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #FFFFEF;
+  text-transform: uppercase;
+}
+.main__moments {
+  margin-top: 40px;
+}
+.main__moments-container {
+  padding: 64px 32px;
+  background: #FFFFEF;
+}
+.main__moments-title {
+  font-size: 25px;
+  line-height: 32.4px;
+}
+.main__moments-img-wrapper {
+  margin-top: 39px;
+  flex: 1 1 auto;
+  gap: 8px;
+}
+.main__moments-img {
+  width: 320px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
