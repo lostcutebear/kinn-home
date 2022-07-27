@@ -1,5 +1,20 @@
-$primary: 'Roboto', sans-serif;
-$secondary: 'Jost', sans-serif;
+$primary: 'Roboto',
+sans-serif;
+$secondary: 'Jost',
+sans-serif;
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%style {
+    font-size: 16px;
+    // letter-spacing: 1.6px;
+    font-weight: 400;
+    color: #56593D;
+}
 
 html {
     box-sizing: border-box;
@@ -44,6 +59,7 @@ a {
 body {
     font-family: $primary;
     padding: 22px 32px;
+    font-weight: 400;
 }
 
 .header {
@@ -57,10 +73,12 @@ body {
     &__nav {
         display: flex;
     }
+
     &__nav-list {
         display: flex;
         align-items: center;
         width: 564.59px;
+
         a {
             text-transform: uppercase;
             padding: 0 16px;
@@ -79,6 +97,7 @@ body {
 
     &__user-abilities {
         display: flex;
+
         img {
             padding: 0 12px;
 
@@ -101,5 +120,184 @@ body {
         right: 64px;
     }
 
+    &__img-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        letter-spacing: 1.8px;
+        color: #56593D;
+        text-align: right;
+    }
 
+    &__img-text {
+        margin-top: 10px;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 60.48px;
+        text-align: right;
+        color: #56593D;
+        margin-bottom: 41px;
+    }
+
+    &__img-link-wrapper {
+        text-align: right;
+    }
+
+    &__img-link {
+        text-align: center;
+        color: #ffffef;
+        background: #56593D;
+        width: 154px;
+        height: 56px;
+        padding: 16px 25px 17px;
+        font-size: 16px;
+        line-height: 22.36px;
+        letter-spacing: 1.58px;
+    }
+
+    &__text-wrapper {
+        margin-top: 110px;
+    }
+
+    &__text {
+        font-size: 57px;
+        line-height: 81px;
+        text-align: center;
+        color: #56593D;
+    }
+
+    &__link-container {
+        margin-top: 25px;
+        margin-bottom: 90px;
+        @extend %flex;
+        gap: 93px;
+    }
+
+    &__link {
+        @extend %style;
+        border-bottom: 1px solid #56593D;
+        border-bottom-width: 2px;
+        letter-spacing: 1.6px;
+    }
+
+    &__boards {
+        background: #FFFFEF;
+        padding: 32px;
+        margin-bottom: 23px;
+    }
+
+    &__boards-title {
+        padding-top: 31px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    &__boards-wrapper {
+        @extend %flex;
+        gap: 32px;
+        flex: 1;
+    }
+
+    &__boards-img {
+        margin-bottom: 15px;
+    }
+
+    &__boards-type {
+        @extend %style;
+        line-height: 21.6px;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    &__boards-price {
+        @extend %style;
+        line-height: 25.92px;
+        letter-spacing: 1.62px;
+        text-align: center;
+    }
+
+    &__essentials {
+        background: #FFFFEF;
+        padding: 16px;
+    }
+
+    &__essentials-img-wrapper {
+        height: 700px;
+        background-image: url(./images/Rectangle\ \(7\).png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+        h2 {
+            @extend %style;
+            position: absolute;
+            top: 62px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 17px;
+            letter-spacing: 1.8px;
+            line-height: 21.6px;
+        }
+
+        p {
+            @extend %style;
+            position: absolute;
+            top: 95px;
+            max-width: 1093px;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 60.48px;
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+
+    &__design-story {
+        background: #FFFFEF;
+        padding: 65px 32px;
+    }
+
+    &__design-story-container {
+        @extend %flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 119px;
+        flex: 1;
+    }
+
+    &__design-img-wrapper {
+        max-width: 743px;
+        width: 100%;
+        position: relative;
+    }
+
+    
+    &__design-title {
+        @extend %style;
+        margin-bottom: 66px;
+        font-size: 29px;
+        line-height: 38.88px;
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__design-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        width: 40px;
+        background: #56593D;
+    }
+
+    &__design-desc {
+        @extend %style;
+        font-size: 20px;
+        line-height: 32.4px;
+        text-align: center;
+        width: 347px;
+    }
 }
