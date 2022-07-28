@@ -1,13 +1,19 @@
-.main__moments-img-wrapper, .main__moments-title, .main__subscribe, .main__boards-wrapper, .main__link-container {
+.footer__connection-wrapper, .main__moments-img-wrapper, .main__moments-title, .main__subscribe, .main__boards-wrapper, .main__link-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main__moments-title, .main__register-signup-text, .main__register-signup-title, .main__table-desc, .main__table-title, .main__design-desc, .main__design-title, .main__essentials-img-wrapper p, .main__essentials-img-wrapper h2, .main__boards-price, .main__boards-type, .main__link {
+.footer__connection-copyright, .main__moments-title, .main__register-signup-text, .main__register-signup-title, .main__table-desc, .main__table-title, .main__design-desc, .main__design-title, .main__essentials-img-wrapper p, .main__essentials-img-wrapper h2, .main__boards-price, .main__boards-type, .main__link {
   font-size: 16px;
   font-weight: 400;
   color: #56593D;
+}
+
+.footer__explore-link, .footer__help-link, .footer__explore-title, .footer__help-title, .footer__connection-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffef;
 }
 
 html {
@@ -59,7 +65,8 @@ body {
 .header__container {
   margin-bottom: 51.5px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 .header__nav {
   display: flex;
@@ -332,6 +339,7 @@ body {
 }
 .main__moments {
   margin-top: 40px;
+  margin-bottom: 128px;
 }
 .main__moments-container {
   padding: 64px 32px;
@@ -349,4 +357,71 @@ body {
 .main__moments-img {
   width: 320px;
   height: auto;
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #717353;
+  padding: 62px 35px;
+}
+.footer__connection-wrapper {
+  justify-content: flex-start;
+  margin-bottom: 33px;
+  gap: 7px;
+}
+.footer__connection-copyright {
+  color: #ffffef;
+  line-height: 25.2px;
+}
+.footer__connection-title {
+  position: relative;
+  color: #ffffef;
+  font-size: 15px;
+  line-height: 25.2px;
+}
+.footer__connection-title::after {
+  position: absolute;
+  bottom: -15px;
+  left: -58px;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #ffffef;
+}
+.footer__connection-text {
+  line-height: 25.2px;
+  width: 256px;
+}
+.footer__social {
+  display: flex;
+  gap: 19px;
+}
+.footer__explore-title, .footer__help-title {
+  margin-bottom: 43px;
+  position: relative;
+  font-size: 15px;
+  line-height: 18.9px;
+  letter-spacing: 1.58px;
+  text-transform: uppercase;
+}
+.footer__explore-title::after, .footer__help-title::after {
+  position: absolute;
+  content: "";
+  bottom: -17px;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background: #ffffef;
+}
+.footer__explore-list, .footer__help-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.footer__explore-link, .footer__help-link {
+  letter-spacing: 1.58px;
+  text-transform: uppercase;
+  line-height: 25.2px;
 }/*# sourceMappingURL=style.css.map */

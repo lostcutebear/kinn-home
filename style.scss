@@ -16,6 +16,12 @@ sans-serif;
     color: #56593D;
 }
 
+%footerstyle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffef;
+}
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -66,8 +72,8 @@ body {
     &__container {
         margin-bottom: 51.5px;
         display: flex;
-        // align-items: center;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
     }
 
     &__nav {
@@ -408,6 +414,7 @@ body {
 
     &__moments {
         margin-top: 40px;
+        margin-bottom: 128px;
     }
 
     &__moments-container {
@@ -434,8 +441,90 @@ body {
         width: 320px;
         height: auto;
     }
+}
 
-    
+.footer {
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #717353;
+        padding: 62px 35px;
+    }
+
+    &__connection-wrapper {
+        @extend %flex;
+        justify-content: flex-start;
+        margin-bottom: 33px;
+        gap: 7px;
+    }
+
+    &__connection-copyright {
+        color: #ffffef;
+        @extend %style;
+        line-height: 25.2px;
+    }
+
+    &__connection-title {
+        position: relative;
+        color: #ffffef;
+        font-size: 15px;
+        line-height: 25.2px;
+    }
+
+    &__connection-title::after {
+        position: absolute;
+        bottom: -15px;
+        left: -58px;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: #ffffef;
+    }
+
+    &__connection-text {
+        @extend %footerstyle;
+        line-height: 25.2px;
+        width: 256px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 19px;
+    }
+
+    &__explore-title, &__help-title {
+        @extend %footerstyle;
+        margin-bottom: 43px;
+        position: relative;
+        font-size: 15px;
+        line-height: 18.9px;
+        letter-spacing: 1.58px;
+        text-transform: uppercase;
+    }
+
+    &__explore-title::after, &__help-title::after {
+        position: absolute;
+        content: "";
+        bottom: -17px;
+        left: 0;
+        width: 40px;
+        height: 1px;
+        background: #ffffef;
+    }
+
+    &__explore-list, &__help-list{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    &__explore-link, &__help-link {
+        @extend %footerstyle;
+        letter-spacing: 1.58px;
+        text-transform: uppercase;
+        line-height: 25.2px;
+    }
 }
 
 
