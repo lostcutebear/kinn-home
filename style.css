@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.footer__connection-copyright, .main__moments-title, .main__register-signup-text, .main__register-signup-title, .main__table-desc, .main__table-title, .main__design-desc, .main__design-title, .main__essentials-img-wrapper p, .main__essentials-img-wrapper h2, .main__boards-price, .main__boards-type, .main__link {
+.footer__connection-copyright, .main__moments-title, .main__register-signup-text, .main__register-signup-title, .main__table-desc, .main__table-title, .main__design-desc, .main__design-title, .main__essentials-img-wrapper p, .main__essentials-img-wrapper h2, .main__boards-price, .main__boards-type, .main__link, .header__nav-list a {
   font-size: 16px;
   font-weight: 400;
   color: #56593D;
@@ -62,37 +62,29 @@ body {
   font-weight: 400;
 }
 
-.header__container {
-  margin-bottom: 51.5px;
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-}
-.header__nav {
-  display: flex;
+  padding: 35px 15px;
 }
 .header__nav-list {
   display: flex;
-  align-items: center;
-  width: 564.59px;
+  gap: 35px;
 }
 .header__nav-list a {
-  text-transform: uppercase;
-  padding: 0 16px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25.2px;
   letter-spacing: 1.58px;
-  color: #56593D;
+  line-height: 25.2px;
+  text-transform: uppercase;
 }
-.header__logo {
-  margin-left: 50px;
+.header__logo-img {
+  margin-left: -105px;
 }
-.header__user-abilities {
+.header__icons-wrapper {
   display: flex;
-}
-.header__user-abilities img {
-  padding: 0 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .main__img-wrapper {
